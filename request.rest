@@ -1,0 +1,86 @@
+###
+GET http://localhost:5000/users
+
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+   "name": "falih",
+   "email": "falih@gmail.com",
+   "password": "123456",
+   "confPassword": "123456",
+   "role": "admin"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+   "email": "okan@gmail.com",
+   "password": "123123"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+PUT http://localhost:5000/user/3
+Content-Type: application/json
+
+{
+   "name": "yes",
+   "email": "yes@gmail.com",
+   "password": "123123",
+   "confPassword": "123123",
+   "role": "admin"
+}
+
+###
+DELETE http://localhost:5000/user/1
+
+###
+GET http://localhost:5000/blog
+
+###
+GET http://localhost:5000/blog/1
+
+###
+POST http://localhost:5000/blog
+Content-Type: application/json
+
+{
+   "title": "nice@gmail.com",
+   "img": "123456",
+   "desc": "wkaokwao",
+   "userId":"1"
+}
+
+###
+GET http://localhost:5000/contact
+
+###
+POST http://localhost:5000/contact
+Content-Type: application/json
+
+{
+   "name": "Geby Friska",
+   "email": "friska@gmail.com",
+   "subject": "Mnatap",
+   "message":"2"
+}
+
+###
+PUT http://localhost:5000/contact/1
+Content-Type: application/json
+
+{
+   "name": "Dani Falih",
+   "email": "ahnaf@gmail.com",
+   "subject": "MNATP",
+   "message":"2"
+}
+
+###
+DELETE http://localhost:5000/contact/2
